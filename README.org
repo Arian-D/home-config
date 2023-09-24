@@ -1,0 +1,16 @@
+#+TITLE: Home Config (WIP)
+* Usage
+I still haven't learned how to include the channels in the reconfigure
+process, so first
+** Move Channels
+,you'd have to move the [[./channels.scm]] file to
+=~/.guix-home/=:
+#+begin_src bash
+  cp ./channels.scm ~/.guix-home/channels.scm 
+#+end_src
+And then,
+** Reconfigure
+#+begin_src bash
+  guix home reconfigure home-configuration.scm 
+#+end_src
+
