@@ -16,8 +16,11 @@
  (dwl-guile patches))
 
 (home-environment
+ ;; TODO: Use packages from the respective modules instead of using strings
  (packages (specifications->packages (list "emacs-next-pgtk"
                                            "emacs-vterm"
+                                           "sicp"
+                                           "guile"
                                            "bemenu"
                                            "xorg-server-xwayland")))
  (services
