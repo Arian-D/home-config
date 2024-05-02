@@ -205,9 +205,7 @@ bar {
 
 mode "screenshot" {
     bindsym A exec grim -g "$(slurp)" - | wl-copy; mode "default"
-
-    bindsym Return mode "default"
-    bindsym Escape mode "default"
+    bindsym F exec grim - | wl-copy; mode "default"
 }
 
 bindsym $mod+p mode "screenshot"
