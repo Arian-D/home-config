@@ -1,6 +1,7 @@
 local wezterm = require 'wezterm'
 local config = {}
 config.hide_tab_bar_if_only_one_tab = true
+config.tab_max_width = 48
 config.default_cursor_style = 'SteadyBar'
 config.window_padding = {
   left = 0,
