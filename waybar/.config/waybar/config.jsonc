@@ -1,0 +1,23 @@
+{
+    "layer": "top",
+    "modules-left": ["river/mode", "river/tags"],
+    "modules-center": ["river/window"],
+    "modules-right": ["backlight/slider", "battery", "clock"],
+    "backlight/slider": {
+        "min": 10,
+        "max": 100
+    },
+    "battery": {
+        "format": "{capacity}% {icon}",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "clock": {
+        "format-alt": "{:%a, %d. %b  %H:%M}"
+    },
+    "river/mode": {
+        "format": "{}"
+    },
+    "river/tags": {
+        "num-tags": 9
+    }
+}
