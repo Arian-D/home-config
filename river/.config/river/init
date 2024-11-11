@@ -176,11 +176,16 @@ riverctl spawn "mako"
 # Locking
 riverctl spawn "swayidle -w timeout 900 'swaylock -c 000000'"
 
+riverctl spawn "swaybg -i ~/Downloads/wallpaper1.jpg "
+
+# Pipewire
+riverctl spawn "gentoo-pipewire-launcher restart"
+
 # Launch Emacs via the Guix manifest script
-~/src/emacs-config/manifest.scm
+riverctl spawn "~/src/emacs-config/manifest.scm"
 
 # Adjust scaling
-riverctl spawn "guix shell wlr-randr -- wlr-randr --output eDP-1 --scale 1.5"
+riverctl spawn "guix shell wlr-randr -- wlr-randr --output eDP-1 --scale 1.5 --mode 2880x1800@60.000999Hz"
 
 ## Custom keybindings
 
