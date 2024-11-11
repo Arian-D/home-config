@@ -194,6 +194,9 @@ riverctl map normal Super Escape spawn "swaylock -F -c 000000"
 riverctl map normal Super p spawn 'grim -g "$(slurp)" - | wl-copy'
 riverctl map normal Super T spawn 'grim -g "$(slurp)" - | tesseract - - | wl-copy'
 
+riverctl map normal None XF86AudioRaiseVolume spawn "wpctl set-volume @DEFAULT_SINK@ 5%+"
+riverctl map normal None XF86AudioLowerVolume spawn "wpctl set-volume @DEFAULT_SINK@ 5%-"
+riverctl map normal None XF86AudioMute        spawn "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
 
 ## Mouse configuration
 

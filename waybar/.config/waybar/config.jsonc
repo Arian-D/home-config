@@ -2,10 +2,16 @@
     "layer": "top",
     "modules-left": ["river/mode", "river/tags"],
     "modules-center": ["river/window"],
-    "modules-right": ["backlight/slider", "battery", "clock"],
+    "modules-right": ["backlight/slider", "wireplumber", "battery", "clock"],
     "backlight/slider": {
         "min": 10,
         "max": 100
+    },
+    "wireplumber": {
+        "format": "{volume}% {icon}",
+        "format-muted": "",
+        "on-click": "helvum",
+        "format-icons": ["", "", ""]
     },
     "battery": {
         "format": "{capacity}% {icon}",
