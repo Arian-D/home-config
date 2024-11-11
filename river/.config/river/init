@@ -10,7 +10,7 @@
 
 # Note: the "Super" modifier is also known as Logo, GUI, Windows, Mod4, etc.
 
-riverctl map normal Super+Shift Return spawn wezterm
+riverctl map normal Super+Shift Return spawn  ~/src/ghostty/zig-out/bin/ghostty
 
 # Super+Q to close the focused view
 riverctl map normal Super Q close
