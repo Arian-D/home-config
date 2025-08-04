@@ -1,4 +1,4 @@
-#!/usr/bin/env nuw
+#!/usr/bin/env nu
 if (which carapace | is-not-empty) {
   # Carapace completion
   $env.CARAPACE_BRIDGES = 'zsh,fish,bash,inshellisense' # optional
