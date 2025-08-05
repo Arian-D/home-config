@@ -1,4 +1,4 @@
-#!/usr/bin/env nuw
+#!/usr/bin/env nu
 # Carapace initialization
 if ("~/.cache/carapace/init.nu" | path exists) {
    source ~/.cache/carapace/init.nu
