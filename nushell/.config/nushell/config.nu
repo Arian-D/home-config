@@ -12,7 +12,9 @@ $env.PROMPT_COMMAND_RIGHT = ""
 # Customize prompt
 $env.PROMPT_INDICATOR = " → "
 # Set the GPG TTY
-$env.GPG_TTY = (tty)
+if (which tty | is-not-empty) {
+  $env.GPG_TTY = (tty)
+}
 # Set up the ssh agent to be used with the gpg agent
 if (which gpgconf | is-not-empty) {
   $env.SSH_AUTH_SOCK = (gpgconf --list-dirs agent-ssh-socket)
