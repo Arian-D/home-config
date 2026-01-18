@@ -1,15 +1,15 @@
 {
     "layer": "top",
-    "modules-left": ["river/mode", "river/tags"],
-    "modules-center": ["river/window"],
-    "modules-right": ["backlight/slider", "wireplumber", "battery", "clock"],
-    "backlight/slider": {
-        "min": 10,
-        "max": 100
+    "modules-left": ["niri/workspaces"],
+    "modules-center": ["niri/window"],
+    "modules-right": ["backlight", "wireplumber", "battery", "clock"],
+    "backlight": {
+        "format": "{percent}% {icon}",
+        "format-icons": ["", ""]
     },
     "wireplumber": {
         "format": "{volume}% {icon}",
-        "format-muted": "",
+        "format-muted": "󰝟",
         "on-click": "helvum",
         "format-icons": ["", "", ""]
     },
