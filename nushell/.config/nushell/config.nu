@@ -1,9 +1,17 @@
 #!/usr/bin/env nu
 use std/clip
+
 # Carapace initialization
 const carapace_init_file = "~/.cache/carapace/init.nu"
 if ($carapace_init_file | path exists) {
   source $carapace_init_file
+}
+
+# Add custom scripts
+$env.HOME
+| path join .local/bin
+| if ($in | path exists) {
+  $env.PATH ++= [ $in ]
 }
 
 # No MOTD
