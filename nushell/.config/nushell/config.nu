@@ -40,3 +40,17 @@ def --env cdtemp [] {
 | where $it != []
 | first
 | $env.EDITOR = $in.0.command
+
+@example "simple intersection" {
+  [a b c] | intersect [b c d] # => [b, c]
+}
+def intersect [right: list]: list -> list {
+  wrap item
+  | join ($right | wrap item) item
+  | get item
+}
+
+# Current temp
+alias current_temp = http wttr.in/?u
+
+$env.SUDO_PROMPT = "🔒 "
